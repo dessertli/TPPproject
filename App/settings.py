@@ -30,6 +30,9 @@ class DevelopConfig(Config):
         "DRIVER":"pymysql",
 
     }
+    MAIL_SERVER = "smtp.163.com"
+    MAIL_USERNAME = "18020224157@163.com"
+    MAIL_PASSWORD = "ly8406021"
     SQLALCHEMY_DATABASE_URI = get_db_uri(DATABASE)
 
 envs = {"develop":DevelopConfig,
